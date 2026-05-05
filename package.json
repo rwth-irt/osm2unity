@@ -1,0 +1,23 @@
+{
+    "name": "com.irt.osm2unity",
+    "version": "1.0.0",
+    "displayName": "OSM2Unity",
+    "description": "Toolkit to procedurally generate 3D Scene from OSM file.",
+    "unity": "2021.3",
+    "unityRelease": "0b5",
+    "dependencies": {
+        "com.unity.xr.openxr": "1.8.2",
+        "com.unity.render-pipelines.universal": "12.1.15"
+    },
+    "keywords": [
+        "osm",
+        "real-world",
+        "simulator"
+    ],
+    "author": {
+        "name": "Institute of Automatic Control - RWTH Aachen University",
+        "email": "secretary@irt.rwth-aachen.de",
+        "url": "https://www.irt.rwth-aachen.de"
+    }
+}
+

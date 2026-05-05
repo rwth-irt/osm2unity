@@ -1,0 +1,7 @@
+{
+	"name": "OSM2Unity",
+	"references": [
+		"Unity.InputSystem",
+		"Unity.XR.OpenXR"
+	]
+}
