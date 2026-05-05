@@ -1,0 +1,58 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  A Unity Pipeline for Procedural Generation of Real-World
+  and Synthetic Environments for Cycling Research
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Chinmay
+    family-names: Srinivas
+    affiliation: 'Institute of Automatic Control, RWTH Aachen University'
+    email: chinmay.srinivas@rwth-aachen.de
+  - given-names: Heike
+    family-names: Vallery
+    affiliation: 'Institute of Automatic Control, RWTH Aachen University'
+    orcid: 'https://orcid.org/0000-0002-0305-398X'
+    email: h.vallery@irt.rwth-aachen.de
+  - given-names: Nuria
+    family-names: Pena-Perez
+    email: n.perez@irt.rwth-aachen.de
+    affiliation: 'Institute of Automatic Control, RWTH Aachen University'
+    orcid: 'https://orcid.org/0000-0002-4844-4685'
+repository-code: 'https://github.com/rwth-irt/osm2unity'
+abstract: >-
+  To facilitate the generation of interactive environments
+  for cycling simulation, this project presents a
+  Unity-based pipeline for procedural generation of both
+  real maps from the OpenStreetMap (OSM) database and
+  synthetic maps. The pipeline integrates geospatial data
+  parsing, terrain and road network reconstruction, and
+  real-time simulation in a single workflow, enabling rapid
+  creation of maps without manual modeling or external
+  preprocessing. The produced 3D environments preserve key
+  infrastructural features relevant to cycling, including
+  complex road networks, elevation changes, and low-poly
+  buildings. The system supports interactive navigation with
+  a controllable bicycle agent via keyboard or VR
+  controllers. We have evaluated the approach showing that
+  both real-world maps and customized synthetic environments
+  could be generated efficiently while maintaining
+  simulation performance up to 60 FPS. Identified
+  limitations include dependency on OSM data quality,
+  elevation resolution, and the current restriction to
+  simple building geometries and a limited set of semantic
+  infrastructure types, with future work aiming to extend
+  support for additional infrastructure types and further
+  improve scalability.
+keywords:
+  - OpenStreetMap (OSM)
+  - Unity
+  - Procedural environment generation
+  - Cycling simulation
+version: v1.0.0
+date-released: '2026-05-05'
