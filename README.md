@@ -33,7 +33,25 @@ This Unity package generates real-world and synthetic environments for a **bicyc
 ## 🧰 How to Use
 
 ### Step 1: Import Package
-Import package via: `Window → Package Manager → + → Add package from disk`
+#### Using Local Package
+
+1. Download or clone the repository `https://github.com/rwth-irt/osm2unity`
+
+2. Open Unity Package Manager:
+```
+Window → Package Manager → + → Add package from disk
+```
+
+3. Select `osm2unity/package.json`
+
+#### Using Git URL
+
+1. Open Unity Package Manager:
+```
+Window → Package Manager → + → Add package from git URL
+```
+
+2. Paste `https://github.com/rwth-irt/osm2unity.git`
 
 ### Step 2: Prepare Files
 
@@ -91,40 +109,49 @@ Activate the `FreeRoam.cs` script in the bike GameObject to enable manual contro
 ---
 
 ## 📁 Project Structure
-com.irt.osm2unity/  
-|── Editor/  
-|&emsp;├── OpenStreetMapImporter/  
-|&emsp; |&emsp;├── Infrastructure  
-|&emsp; |&emsp; |&emsp;├── Buildings/  
-|&emsp; |&emsp; |&emsp; |&emsp;├── BuildingMaker.cs  
-|&emsp; |&emsp; |&emsp; |&emsp;├── Roof.cs  
-|&emsp; |&emsp; |&emsp; |&emsp;└── Window.cs   
-|&emsp; |&emsp; |&emsp;├── Roads/  
-|&emsp; |&emsp; |&emsp; |&emsp;├── RoadMaker.cs  
-|&emsp; |&emsp; |&emsp; |&emsp;├── Intersection.cs  
-|&emsp; |&emsp; |&emsp; |&emsp;├── Lane.cs  
-|&emsp; |&emsp; |&emsp; |&emsp;└── Sidewalk.cs   
-|&emsp; |&emsp; |&emsp;├── Semantic/  
-|&emsp; |&emsp; |&emsp; |&emsp;├── ObjectPlacer.cs  
-|&emsp; |&emsp; |&emsp; |&emsp;├── TrafficSign.cs  
-|&emsp; |&emsp; |&emsp; |&emsp;└── TrafficSignal.cs  
-|&emsp; |&emsp; |&emsp;├── Terrain/  
-|&emsp; |&emsp; |&emsp; |&emsp;└── TerrainMaker.cs  
-|&emsp; |&emsp;├── Deserialization/  
-|&emsp; |&emsp; |&emsp;├── BaseOsm.cs  
-|&emsp; |&emsp; |&emsp;├── OsmBounds.cs  
-|&emsp; |&emsp; |&emsp;├── OsmNode.cs  
-|&emsp; |&emsp; |&emsp;├── OsmRelation.cs  
-|&emsp; |&emsp; |&emsp;└── OsmWay.cs  
-|&emsp; |&emsp;├── ImportMapDataEditorWindow.cs  
-|&emsp; |&emsp;├── ImportMapWrapper.cs  
-|&emsp; |&emsp;├── MapReader.cs  
-|&emsp; |&emsp;└── MercatorProjection.cs  
-|&emsp;├── Bicycle/  
-|&emsp; |&emsp;└── Bicycle.cs  
-|── Runtime/  
-|&emsp;├── FreeRoam.cs  
-|&emsp;└── ViveController.cs  
+```plaintext
+com.irt.osm2unity/
+|── Editor/
+|   ├── OpenStreetMapImporter/
+|   |   ├── Infrastructure/
+|   |   |   ├── Buildings/
+|   |   |   |   ├── BuildingMaker.cs
+|   |   |   |   ├── Roof.cs
+|   |   |   |   └── Window.cs
+|   |   |   |
+|   |   |   ├── Roads/
+|   |   |   |   ├── RoadMaker.cs
+|   |   |   |   ├── Intersection.cs
+|   |   |   |   ├── Lane.cs
+|   |   |   |   └── Sidewalk.cs
+|   |   |   |
+|   |   |   ├── Semantic/
+|   |   |   |   ├── ObjectPlacer.cs
+|   |   |   |   ├── TrafficSign.cs
+|   |   |   |   └── TrafficSignal.cs
+|   |   |   |
+|   |   |   ├── Terrain/
+|   |   |   |   └── TerrainMaker.cs
+|   |   |
+|   |   ├── Deserialization/
+|   |   |   ├── BaseOsm.cs
+|   |   |   ├── OsmBounds.cs
+|   |   |   ├── OsmNode.cs
+|   |   |   ├── OsmRelation.cs
+|   |   |   └── OsmWay.cs
+|   |   |
+|   |   ├── ImportMapDataEditorWindow.cs
+|   |   ├── ImportMapWrapper.cs
+|   |   ├── MapReader.cs
+|   |   └── MercatorProjection.cs
+|   |
+|   ├── Bicycle/
+|   |   └── Bicycle.cs
+|
+|── Runtime/
+|   ├── FreeRoam.cs
+|   └── ViveController.cs
+```
 
 ---
 ## 🧪 Supported Tags
